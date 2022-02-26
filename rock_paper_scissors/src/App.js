@@ -5,17 +5,19 @@ function App() {
     <div>
       <h1 className="title">Rock Paper Scissors</h1>
       <p1 className="prompt_user_to_choose">Select your attack: </p1>
-      <button type="button" className="Rock">
-        Rock
-      </button>
-      <p-space> </p-space>
-      <button type="button" className="Paper">
-        Paper
-      </button>
-      <p-space> </p-space>
-      <button type="button" className="Scissors">
-        Scissors
-      </button>
+      <div class="container">
+        <button type="button" className="Rock">
+          Rock
+        </button>
+        <p-space> </p-space>
+        <button type="button" className="Paper">
+          Paper
+        </button>
+        <p-space> </p-space>
+        <button type="button" className="Scissors">
+          Scissors
+        </button>
+      </div>
       <div>
         <p-space> </p-space>
         <p2 className="Bobs_choice">Bob has chosen:</p2>

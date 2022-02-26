@@ -36,8 +36,17 @@
   text-align: center;
   font-size: 25px;
 }
+/* .container makes sure R,P,S is in same column in middle */
+.container {
+  display: flex;
+  /* items are centered along the line */
+  justify-content: center;
+  /* center: items are centered in the cross-axis */
+  align-items: center;
+}
+
 .Rock {
-  width: 70px;
+  width: 90px;
   height: 70px;
   padding: 10px 16px;
   border-radius: 35px;
@@ -48,7 +57,7 @@
 }
 
 .Paper {
-  width: 70px;
+  width: 90px;
   height: 70px;
   padding: 10px 16px;
   border-radius: 35px;
@@ -85,7 +94,7 @@
 .btn-circle.btn-xl {
   margin: 0 auto;
   display: block;
-  width: 70px;
+  width: 90px;
   height: 70px;
   padding: 10px 16px;
   border-radius: 35px;
