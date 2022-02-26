@@ -6,4 +6,12 @@
   min-height: 15vh;
   text-align: center;
   background-color: aqua;
+  font-size: 40px;
+}
+
+.prompt_user_to_choose {
+  font-size: 25px;
+}
+.Bobs_choice {
+  font-size: 25px;
 }
