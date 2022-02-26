@@ -1,35 +1,39 @@
 import "./App.css";
 import bootstrap from "bootstrap";
+import Click_rock from "./attack_buttons/click_rock";
+import Click_paper from "./attack_buttons/click_paper";
+import Click_scissors from "./attack_buttons/click_scissors";
+
 function App() {
   return (
     <div>
       <h1 className="title">Rock Paper Scissors</h1>
-      <p1 className="prompt_user_to_choose">Select your attack: </p1>
-      <div class="container">
-        <button type="button" className="Rock">
+      <p className="prompt_user_to_choose">Select your attack: </p>
+      <div className="container">
+        <button type="button" className="Rock" onClick={Click_rock}>
           Rock
         </button>
         <p-space> </p-space>
-        <button type="button" className="Paper">
+        <button type="button" className="Paper" onClick={Click_paper}>
           Paper
         </button>
         <p-space> </p-space>
-        <button type="button" className="Scissors">
+        <button type="button" className="Scissors" onClick={Click_scissors}>
           Scissors
         </button>
       </div>
       <div>
         <p-space> </p-space>
-        <p2 className="Bobs_choice">Bob has chosen:</p2>
+        <p className="Bobs_choice">Bob has chosen:</p>
         <button type="Label" class="btn-circle btn-xl">
           test
         </button>
       </div>
       <div>
-        <p3 className="results">Result:</p3>
+        <p className="results">Result:</p>
       </div>
       <div>
-        <p3 className="results">Winner is:</p3>
+        <p className="results">Winner is:</p>
       </div>
       <div>
         <button type="button" className="new_game">
