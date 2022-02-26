@@ -1,0 +1,9 @@
+.title {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+  text-align: center;
+  background-color: aqua;
+}
