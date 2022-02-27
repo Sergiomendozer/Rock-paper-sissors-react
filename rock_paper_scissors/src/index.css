@@ -36,18 +36,6 @@
   text-align: center;
   font-size: 25px;
 }
-.new_game {
-  margin: 0 auto;
-  display: block;
-  width: 90px;
-  height: 70px;
-  padding: 10px 16px;
-  border-radius: 35px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  background-color: rgb(255, 123, 62);
-}
 
 /* circle button */
 .btn-circle.btn-xl {

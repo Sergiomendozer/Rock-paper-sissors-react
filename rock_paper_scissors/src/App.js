@@ -43,11 +43,6 @@ function App() {
           <p id="winner_result" className="results"></p>
         </p>
       </div>
-      <div>
-        <button type="button" className="new_game">
-          New Game
-        </button>
-      </div>
     </div>
   );
 }
