@@ -13,5 +13,6 @@ export default function random_attack_choice(user_picked_attack) {
     <p>{bobs_attack_choice}</p>,
     document.getElementById("bobs_attack_choice")
   );
+  console.log(`users choice in random attack: ${user_picked_attack}`);
   who_won(user_picked_attack, bobs_attack_choice);
 }
