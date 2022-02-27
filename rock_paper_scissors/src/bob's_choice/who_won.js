@@ -2,10 +2,6 @@ import react from "react";
 import ReactDOM from "react-dom";
 
 export default function who_won(user_picked_attack, bobs_attack_choice) {
-  console.log(`users choice: ${user_picked_attack}`);
-  console.log(`Bob's choice: ${bobs_attack_choice}`);
-  // next remove returns and do paper and scissors
-
   if (user_picked_attack === "Rock" && bobs_attack_choice === "Rock") {
     ReactDOM.render(
       <p>Both of you picked Rock</p>,
