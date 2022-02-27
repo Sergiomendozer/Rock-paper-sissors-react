@@ -17,7 +17,7 @@ export default function who_won(user_picked_attack, bobs_attack_choice) {
       <p>Paper beats Rock</p>,
       document.getElementById("reason_for_winner")
     );
-    ReactDOM.render(<p>Bob Wins</p>, document.getElementById("winner_result"));
+    ReactDOM.render(<p>You Lose</p>, document.getElementById("winner_result"));
   } else if (user_picked_attack == "Rock" && bobs_attack_choice == "Scissors") {
     ReactDOM.render(
       <p>Rock beats Scissors</p>,
@@ -25,28 +25,64 @@ export default function who_won(user_picked_attack, bobs_attack_choice) {
     );
     ReactDOM.render(<p>You Win</p>, document.getElementById("winner_result"));
   } else if (user_picked_attack === "Paper" && bobs_attack_choice === "Rock") {
-    console.log("paper beats rock, paper");
+    ReactDOM.render(
+      <p>Paper beats Rock</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>You Win</p>, document.getElementById("winner_result"));
+  } else if (user_picked_attack == "Rock" && bobs_attack_choice == "Scissors") {
+    ReactDOM.render(
+      <p>Rock beats Scissors</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>You Win</p>, document.getElementById("winner_result"));
   } else if (user_picked_attack == "Paper" && bobs_attack_choice == "Paper") {
-    console.log("tie paper");
+    ReactDOM.render(
+      <p>Both of you picked paper</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>Tie</p>, document.getElementById("winner_result"));
+  } else if (user_picked_attack == "Rock" && bobs_attack_choice == "Scissors") {
+    ReactDOM.render(
+      <p>Rock beats Scissors</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>You Win</p>, document.getElementById("winner_result"));
   } else if (
     user_picked_attack == "Paper" &&
     bobs_attack_choice == "Scissors"
   ) {
-    console.log("Scissors beats rock, paper");
+    ReactDOM.render(
+      <p>Scissors beats Paper</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>You Lose</p>, document.getElementById("winner_result"));
   } else if (
     user_picked_attack === "Scissors" &&
     bobs_attack_choice === "Rock"
   ) {
-    console.log("Rock beats Scissors, Scissors");
+    ReactDOM.render(
+      <p>Rock beats Scissors</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>You Lose</p>, document.getElementById("winner_result"));
   } else if (
     user_picked_attack == "Scissors" &&
     bobs_attack_choice == "Paper"
   ) {
-    console.log("Scissors beats paper");
+    ReactDOM.render(
+      <p>Scissors beats Paper</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>You Wins</p>, document.getElementById("winner_result"));
   } else if (
     user_picked_attack == "Scissors" &&
     bobs_attack_choice == "Scissors"
   ) {
-    console.log("Tie Scissors");
-  } else console.log("none");
+    ReactDOM.render(
+      <p>both of picked Scissors</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>Tie</p>, document.getElementById("winner_result"));
+  }
 }
