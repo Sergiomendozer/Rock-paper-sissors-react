@@ -3,7 +3,7 @@ import bootstrap from "bootstrap";
 import Click_rock from "./attack_buttons/click_rock";
 import Click_paper from "./attack_buttons/click_paper";
 import Click_scissors from "./attack_buttons/click_scissors";
-
+import bobs_attack_choice from "./bob's_choice/choice";
 function App() {
   return (
     <div>
@@ -25,9 +25,11 @@ function App() {
       <div>
         <p-space> </p-space>
         <p className="Bobs_choice">Bob has chosen:</p>
-        <button type="Label" class="btn-circle btn-xl">
-          test
-        </button>
+        <button
+          id="bobs_attack_choice"
+          type="Label"
+          class="btn-circle btn-xl"
+        ></button>
       </div>
       <div>
         <p className="results">Result:</p>

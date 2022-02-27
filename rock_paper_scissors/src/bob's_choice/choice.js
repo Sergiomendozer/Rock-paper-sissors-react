@@ -1,11 +1,16 @@
 import react from "react";
+import ReactDOM from "react-dom";
 
-var Bobs_choice = " ";
+var bobs_attack_choice = " ";
 
 export default function random_attack_choice() {
   var list_of_choices = ["Rock", "Paper", "Scissors"];
-  Bobs_choice =
+  bobs_attack_choice =
     list_of_choices[Math.floor(Math.random() * list_of_choices.length)];
-  console.log(Bobs_choice);
-  return Bobs_choice;
+  console.log(bobs_attack_choice);
+  ReactDOM.render(
+    <p>{bobs_attack_choice}</p>,
+    document.getElementById("bobs_attack_choice")
+  );
+  return bobs_attack_choice;
 }
