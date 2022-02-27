@@ -32,10 +32,16 @@ function App() {
         ></button>
       </div>
       <div>
-        <p className="results">Result:</p>
+        <p className="results">
+          Result:
+          <p id="reason_for_winner" className="results"></p>
+        </p>
       </div>
       <div>
-        <p className="results">Winner is:</p>
+        <p className="results">
+          Winner is:
+          <p id="winner_result" className="results"></p>
+        </p>
       </div>
       <div>
         <button type="button" className="new_game">

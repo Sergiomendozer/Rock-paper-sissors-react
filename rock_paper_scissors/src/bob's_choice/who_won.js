@@ -7,11 +7,24 @@ export default function who_won(user_picked_attack, bobs_attack_choice) {
   // next remove returns and do paper and scissors
 
   if (user_picked_attack === "Rock" && bobs_attack_choice === "Rock") {
-    console.log("tie, Rock");
+    ReactDOM.render(
+      <p>Both of you picked Rock</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>Tie</p>, document.getElementById("winner_result"));
   } else if (user_picked_attack == "Rock" && bobs_attack_choice == "Paper") {
-    console.log("Bob wins");
+    ReactDOM.render(
+      <p>Paper beats Rock</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>Bob Wins</p>, document.getElementById("winner_result"));
   } else if (user_picked_attack == "Rock" && bobs_attack_choice == "Scissors") {
     console.log("You win");
+    ReactDOM.render(
+      <p>Rock beats Scissors</p>,
+      document.getElementById("reason_for_winner")
+    );
+    ReactDOM.render(<p>You Win</p>, document.getElementById("winner_result"));
   } else if (user_picked_attack === "Paper" && bobs_attack_choice === "Rock") {
     console.log("paper beats rock, paper");
   } else if (user_picked_attack == "Paper" && bobs_attack_choice == "Paper") {
