@@ -19,7 +19,6 @@ export default function who_won(user_picked_attack, bobs_attack_choice) {
     );
     ReactDOM.render(<p>Bob Wins</p>, document.getElementById("winner_result"));
   } else if (user_picked_attack == "Rock" && bobs_attack_choice == "Scissors") {
-    console.log("You win");
     ReactDOM.render(
       <p>Rock beats Scissors</p>,
       document.getElementById("reason_for_winner")

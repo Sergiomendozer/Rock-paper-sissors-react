@@ -57,9 +57,9 @@
   height: 70px;
   padding: 10px 16px;
   border-radius: 35px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
-
+  font-weight: bold;
   background-color: rgb(252, 255, 98);
 }
 /* .container makes sure R,P,S is in same column in middle */
