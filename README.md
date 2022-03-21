@@ -1,1 +1,0 @@
-# Rock-paper-sissors-react
